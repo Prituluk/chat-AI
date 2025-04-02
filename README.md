@@ -70,3 +70,7 @@ Ejemplo:
 
 ## 🤝 Contribuciones
 Si tienes mejoras o ideas, ¡haz un fork y envía un pull request! 🚀
+
+## 🤝 Úsalo como quieras
+Si quieres utilizar otro modelo de AI que se encuente en Ollama solo tienes que descargarlo y agregarlo en la opcion del index. 
+Modifica todo lo que quieras con responsabilidad. 
