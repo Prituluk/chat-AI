@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con AI local
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chat con AI Local</h1>
+            <div id="connection-status" class="status disconnected">
+                Ollama no conectado
+            </div>
+            <p>⚠️‼️PARA EVITAR DAÑAR TU EQUIPO ASEGURATE DE INSTALAR VERSIONES DE AI COMPATIBLES CON LAS ESPECIFICACIONES DE TU PC.‼️⚠️</p>
+            
+        </header>
+        
+        <div class="model-selector">
+            <label for="model-select">Modelo:</label>
+            <select id="model-select">
+                <option value="deepseek-r1:1.5b">DeepSeek-R1 1.5B</option>
+                <option value="gemma3:4b">gemma3:4b</option>
+                <!-- <option value="deepseek-r1:7b">DeepSeek-R1 7B</option> -->
+            </select>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+            </div>
+            
+            <div class="typing-indicator" id="typing-indicator">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+                <button id="send-button" disabled>Enviar</button>
+            </div>
+        </div>
+        <div class="voice-controls" style="text-align: center; margin-top: 10px;">
+          <button id="speak-button">🔊 Leer</button>
+          <button id="stop-button">⛔ Detener</button>
+      </div>
+      
+        
+        <footer>
+            <p>Nota: Debes tener Ollama corriendo localmente con el comando <b>ollama serve</b></p>
+            <p>Este proyecto esta realizado en una laptop con procesador ryzen 5 5600H y 8gb de memoria ram y es necesario cerrar todos los procesos para que funcione correctamente</p>
+        </footer>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src=".//speak.js"></script>
+
+</body>
+</html>
